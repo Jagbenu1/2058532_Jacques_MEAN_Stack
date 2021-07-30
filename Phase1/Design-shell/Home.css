@@ -2,7 +2,6 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 0px;
 }
-
 html, body{
     background-color: aqua;
     margin: 0;
@@ -10,7 +9,7 @@ html, body{
 }
 
 p{
-   
+   display: inline-block;
    /* border: solid red 1px; */
    color: grey;
 }
@@ -29,6 +28,12 @@ p{
     background-color: aliceblue;
 }
 
+@media screen and (max-width: 668px) {
+    .first, .second, .third, .fourth{
+        width: 200px;
+    }
+}
+
 .first p, .second p, .third p, .fourth p{
     font-size: smaller;
     width: 80%;
@@ -40,13 +45,14 @@ h1, h2, h3, h4, h5, h6{
 }
 
 div{
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .header, .main, .footer{
     border: green 5px outset;
     border-radius: 10px;
 }
+
 
 .header{
     width: 95%;
@@ -64,15 +70,11 @@ div{
 .main{
     width: 75%;
     text-align: center;
+    margin-top: 5px;
 }
 
 .footer{
     width: 95%;
     text-align: center;
-}
-
-@media screen and (max-width: 668px) {
-    .first, .second, .third, .fourth{
-        width: 200px;
-    }
+    margin-top: 5px;
 }
