@@ -1,0 +1,76 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px;
+}
+html, body{
+    background-color: aqua;
+    margin: 0;
+    height: 100%;
+}
+
+p{
+   display: inline-block;
+   /* border: solid red 1px; */
+}
+
+.first, .second, .third, .fourth{
+    padding: 0px;
+    width: 21%;
+    height: fit-content;
+    border: none;
+    box-shadow: 10px 10px 5px grey;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    margin: 20px auto 20px auto;
+    border-radius: 50% / 100%;
+    background-color: aliceblue;
+}
+
+@media screen and (max-width: 668px) {
+    .first, .second, .third, .fourth{
+        width: 200px;
+    }
+}
+
+.first p, .second p, .third p, .fourth p{
+    font-size: smaller;
+    width: 80%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    display: inline-block;
+    margin-bottom: 0%;
+}
+
+.header, .main, .footer{
+    border: green 5px outset;
+    border-radius: 10px;
+}
+
+
+.header{
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header img{
+    width:  200px;
+    height: fit-content;
+    display: inline-block;
+    margin-top: 10px;
+    /* float: left; */
+}
+
+.main{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer{
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
