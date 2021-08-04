@@ -1,0 +1,30 @@
+body, html{
+    height:  100%;
+    width:  100%;
+    /* margin: 0; */
+}
+
+.container{
+    border: 3px solid black;
+    /* position: absolute;
+    top: 50%; */
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+}
+
+.inside{
+    /* border: solid red 1px; */
+    width: fit-content;
+    height: 75%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.inside .back{
+    float: left;
+}
+
+
+
