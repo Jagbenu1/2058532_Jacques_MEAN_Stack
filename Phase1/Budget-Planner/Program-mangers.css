@@ -16,15 +16,12 @@ body, html{
 
 .inside{
     /* border: solid red 1px; */
-    width: fit-content;
-    height: 75%;
+    width: 260px;
+    height: 260px;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
-.inside .back{
-    float: left;
-}
 
 
 
