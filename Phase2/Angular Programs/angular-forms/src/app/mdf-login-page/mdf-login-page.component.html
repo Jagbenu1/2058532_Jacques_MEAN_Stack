@@ -1,0 +1,12 @@
+<div>
+    <h2>Login page using Model Driven Form</h2>
+    <form [formGroup]="loginRef" (ngSubmit)="CheckUser()">
+        <label for="">UserName</label>
+        <input type="text" formControlName="user"><br>
+        <label for="">Password</label>
+        <input type="password" formControlName="pass"><br>
+        <input type="submit" value="Submit" [disabled]="!loginRef.valid"><br>
+        <input type="reset" value="Reset">
+    </form>
+    {{msg}}
+</div>

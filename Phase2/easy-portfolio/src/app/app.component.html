@@ -1,0 +1,50 @@
+<div id="registration" *ngIf="register">
+  <form [formGroup]="formRef" (ngSubmit)="checkInfo()">
+    <label for="">First Name:</label>
+    <input type="text" formControlName="firstN"><br>
+    <label for="">Last Name:</label>
+    <input type="text" formControlName="lastN"><br>
+    <label for="">Username:</label>
+    <input type="text" formControlName="user"><br>
+    <label for="">Password:</label>
+    <input type="text" formControlName="pass"><br>
+    <input type="submit" value="Submit">
+  </form>
+  <p>{{msg1}}</p>
+</div>
+
+<div id="login" *ngIf="login">
+  <form [formGroup]="loginRef" (ngSubmit)="checkLogin()">
+    <label for="">Username:</label>
+    <input type="text" formControlName="user"><br>
+    <label for="">Password:</label>
+    <input type="text" formControlName="pass"><br>
+    <input type="submit" value="Submit">
+  </form>
+  <p>{{msg2}}</p>
+  
+</div>
+
+<div id="profile" *ngIf="profile">
+  <p>Welcome {{username}}!</p>
+  <form [formGroup]="profileRef" (ngSubmit)="addAndOutput();  false;">
+    <label for="">Contact Name:</label>
+    <input type="text" formControlName="contact"><br>
+    <label for="">Phone Number:</label>
+    <input type="text" formControlName="number"><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <table border="1" *ngIf="table">
+    <th>Contact</th>
+    <th>Number</th>
+    <tr *ngFor="let arr of arrayContact">
+      <td>
+        {{arr.contact}}
+      </td>
+      <td>
+        {{arr.number}}
+      </td>
+    </tr>
+  </table>
+</div>

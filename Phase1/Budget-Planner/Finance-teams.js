@@ -12,7 +12,7 @@ const getData = () => {
 
         let startTable = "<h3>Annual Budget</h3><table id=\"finance\"><tr> <th>Client Name</th> <th>Project Name</th> <th>Budget</th> </tr>";
 
-        for(let i =0; i < dataJson.length; i++){
+        for(let i = 0; i < dataJson.length; i++){
             tableContent += "<tr><td>" + dataJson[i].Sclient + "</td><td>" + dataJson[i].Sproject + "</td><td>" + formatter.format(dataJson[i].Sbudget) + "</td></tr>";
             totalBudget += parseFloat(dataJson[i].Sbudget);
 

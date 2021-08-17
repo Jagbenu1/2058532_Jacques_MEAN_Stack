@@ -1,0 +1,9 @@
+<div>
+    <h2>Child4 Comp</h2>
+    <input type="button" value="load data" (click)="loadData()">
+    <ul>
+        <li *ngFor="let emp of employees">
+            {{emp.id}}, {{emp.name}}
+        </li>
+    </ul>
+</div>

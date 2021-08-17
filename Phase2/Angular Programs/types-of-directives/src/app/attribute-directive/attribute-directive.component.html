@@ -1,0 +1,10 @@
+<div>
+    <h2>Attribute Directive</h2>
+    <p style="color: red;">Welcome inline CSS example</p>
+    <p [ngStyle]="{'color':'red'}">Welcome to NgStyle attribute directive</p>
+    <p [ngStyle]="styleVar">Welcome to ngStyle Attribute directive</p>
+
+    <p class="abc">Welcome to CSS class</p>
+    <p [ngClass]="'abc'">ngClass Selector</p>
+    <p [ngClass="{abc:false,xyz:true}"]>ngClass selector base</p>
+</div>
