@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-dahsboard',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DahsboardComponent implements OnInit {
 
-  constructor() { }
+  user?:string = "";
+
+  constructor(public activeRoute: ActivatedRoute) {
+    this.activeRoute.params.subscribe(data=> this.user = data.uname)
+   }
 
   ngOnInit(): void {
   }
