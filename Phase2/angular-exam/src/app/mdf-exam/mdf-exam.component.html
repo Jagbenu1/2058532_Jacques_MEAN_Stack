@@ -1,0 +1,14 @@
+<div>
+    <h2>Angular Exam using MDF</h2>
+    <form [formGroup]="myForm" (ngSubmit)="submit()">
+        <div *ngFor="let q of allQuestions">
+            <p>{{q.Question}}</p>
+            <input type="radio" formControlName={{q.Question}} value="{{q.ans1}}">{{q.ans1}} 
+            <br>
+            <input type="radio" formControlName={{q.Question}} value="{{q.ans2}}">{{q.ans2}} 
+            <br>
+            <input type="radio" formControlName={{q.Question}} value="{{q.ans3}}">{{q.ans3}} 
+        </div>
+        <input type="submit" value="submit">
+    </form>
+</div>

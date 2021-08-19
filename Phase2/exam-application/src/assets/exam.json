@@ -1,0 +1,12 @@
+[
+    {"question":"What is the national flower of Japan?", "ans1":"Rose", "ans2": "Cherry blossom", "ans3":"Orchid", "ans4":"Chrysanthemum", "correctAns":"Cherry blossom"},
+    {"question":"Which of the following empires had no written language: Incan, Aztec, Egyptian, Roman?", "ans1":"Incan", "ans2": "Aztec", "ans3":"Egyptian", "ans4":"Roman", "correctAns":"Incan"},
+    {"question":"Until 1923, what was the Turkish city of Istanbul called?", "ans1":"Ankara", "ans2": "Bursa", "ans3":"Konya", "ans4":"Constantinople", "correctAns":"Constantinople"},
+    {"question":"What country has the most islands in the world?", "ans1":"Indonesia", "ans2": "The Philippines", "ans3":"Sweden", "ans4":"Canada", "correctAns":"Sweden"},
+    {"question":"Which artist painted the ceiling of the Sistine Chapel in Rome? ", "ans1":"Michelangelo", "ans2": "Leonardo", "ans3":"Donatello", "ans4":"Raphael", "correctAns":"Michelangelo"},
+    {"question":"Who painted the Mona Lisa?", "ans1":"Pablo Picasso", "ans2": "Leonardo da Vinci", "ans3":"Vincent van Gogh", "ans4":"Salvador Dali", "correctAns":"Leonardo da Vinci"},
+    {"question":"What is the largest country in the world?", "ans1":"Russia", "ans2": "China", "ans3":"Australia", "ans4":"Alaska", "correctAns":"Russia"},
+    {"question":"How many bones does a shark have?", "ans1":"212", "ans2": "546", "ans3":"2", "ans4":"0", "correctAns":"0"},
+    {"question":"How many elements are there in the periodic table?", "ans1":"200", "ans2": "110", "ans3":"118", "ans4":"49", "correctAns":"118"},
+    {"question":"What is the name of the largest ocean on earth?", "ans1":"Indian", "ans2": "Pacific", "ans3":"Atlantic", "ans4":"Arctic", "correctAns":"Pacific"}
+]

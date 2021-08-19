@@ -1,0 +1,20 @@
+<div>
+  <h2>Exam Application</h2>
+  <form [formGroup]="myExam" (ngSubmit)="submitExam()">
+    <div *ngFor="let q of myQuestions">
+      <hr>
+      <p>{{q.question}}</p>
+      <input type="radio" formControlName={{q.question}} value="{{q.ans1}}"><span id="{{q.ans1}}">{{q.ans1}} </span>
+      <br>
+      <input type="radio" formControlName={{q.question}} value="{{q.ans2}}"><span id="{{q.ans2}}">{{q.ans2}} </span>
+      <br>
+      <input type="radio" formControlName={{q.question}} value="{{q.ans3}}"><span id="{{q.ans3}}">{{q.ans3}} </span>
+      <br>
+      <input type="radio" formControlName={{q.question}} value="{{q.ans4}}"><span id="{{q.ans4}}">{{q.ans4}} </span> 
+      <br>
+    </div>
+    <br>
+    <input type="submit" value="submit" [disabled]="examFinish">  
+    <span>{{msg}} <span id="score">{{msg2}}</span></span>
+  </form>
+</div>
