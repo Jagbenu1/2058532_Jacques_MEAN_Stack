@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Registration Page</h2>
+    <form action="register" method="POST">
+        <label for="">First Name</label>
+        <input type="text" name="fname"><br>
+
+        <label for="">Last Name</label>
+        <input type="text" name="lname"><br>
+
+        <label for="">Sex or Gender</label>
+        <input type="radio" name="gender" value="Male" id="">Male
+        <input type="radio" name="gender" value="Female" id="">Female
+
+        <br>
+
+        <label for="">Hobbies</label>
+        <input type="checkbox" name="hobbies" value="Reading" id="">Reading
+        <input type="checkbox" name="hobbies" value="Playing" id="">Playing
+
+        <br>
+
+        <label for="">DOB</label>
+        <input type="date" name="dob"><br>
+        <label for="">City</label>
+        <select name="city" id="">
+            <option value="Bangalore">Bangalore</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Pune"">Pune</option>
+        </select>
+        <br>
+        <label for="">Username</label>
+        <input type="text" name="uname"><br>
+        <label for="">Password</label>
+        <input type="password" name="pname">
+        <br>
+        <input type="submit" value="Account Create">
+        <input type="reset" value="reset">
+    </form>
+</body>
+</html>
