@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/JavaScript">
+        
+        // let hold = ;
+        let chatArray = [];
+        // let input = ;
+        let socket = io();
+        // socket.on("connection", (msg)=>{
+        //     console.log("I have connected!");
+        // })
+        socket.on("obj1", msg=>{
+            console.log(msg);
+            // chatArray.push(msg);
+            document.getElementById("holder").innerHTML += "<h4>( "+ new Date().toLocaleString() + " ) Server says: " + msg;
+            info = ()=>{
+                let name = document.getElementById("name").value;
+                let chat = document.getElementById("input").value;
+                let chatObj = {name: name, message: chat};
+                socket.emit("chat", chatObj);
+                // chatArray.push(chat);
+                document.getElementById("holder").innerHTML += "<h4>( "+ new Date().toLocaleString() + " )"+ name +" says: " + chat;
+                console.log(chat);
+                document.getElementById("input").value = "";
+            }
+            chatArray.forEach(element => {
+                    console.log("there is something here!");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>Chatting with Socket.io</h2>
+    <div class="container">
+        <div class="message" id="holder">
+
+        </div>
+        <input type="text" id = "name" required placeholder="Name"><br>
+        <input type="text" id="input" required placeholder="Message"><br>
+        <input type="button" value="Send" onclick="info()">
+    </div>
+</body>
+</html>
